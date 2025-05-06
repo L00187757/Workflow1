@@ -12,7 +12,7 @@ jobs:
           date
           pwd
           ls -la
- job2:
+  job2:
     name: Python Setup and Artifact
     runs-on: ubuntu-latest
     steps:
