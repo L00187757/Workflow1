@@ -13,7 +13,7 @@ jobs:
           pwd
           ls -la
   job2:
-    name: Python Setup and Artifact
+    name: Python Setup
     runs-on: ubuntu-latest
     steps:
       - name: setup python
@@ -26,4 +26,8 @@ jobs:
 
       - name: set up pandas
         run: pip install pandas      
-        
+  
+  job3:
+       name: Artifact File
+       run: echo "# This is my python artifact" > artifact.py 
+        python artifact.py
