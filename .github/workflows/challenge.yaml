@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: setup
-        run:
-            date
-            pwd
-            ls -la
+        run: |
+          date
+          pwd
+          ls -la
 
 
