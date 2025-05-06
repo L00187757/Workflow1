@@ -29,5 +29,9 @@ jobs:
   
   job3:
        name: Artifact File
-       run: echo "# This is my python artifact" > artifact.py 
-        python artifact.py
+       runs-on: ubuntu-latest
+       steps:
+        - name: create artefact
+          run: echo "# This is my python artifact" > artifact.py
+               python artifact.py
+              
