@@ -27,4 +27,4 @@ jobs:
     steps:
        - name: step 4
          run: echo "im job 4"
-               
+         Needs: [job1, job2]
