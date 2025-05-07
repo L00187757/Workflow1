@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-  job2:
     name: Python Setup
     runs-on: ubuntu-latest
     steps:
