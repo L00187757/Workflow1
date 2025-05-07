@@ -23,7 +23,8 @@ jobs:
         run: echo "hello from job 3"
    
   job4:
-    Needs: [job1, job2]
+    name: job4
+    needs: [job1, job2]
     runs-on: ubuntu-latest
     steps:
        - name: step 4
